@@ -3,7 +3,6 @@
 #include<Windows.h>
 #include<ctype.h>
 
-
   int StringLenght(char str[]);
   int StringLenght2(const char str[]);
 char* to_upper(char str[]);
