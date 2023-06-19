@@ -1,4 +1,4 @@
-#define _CRT_SECURE_NO_WARNINGS
+п»ї#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include<Windows.h>
 #include<ctype.h>
@@ -12,8 +12,6 @@ char* shrink(char str[]);
 char* remove_symbol(char str[], char symbol);
  bool is_bin_number(const char str[]);
  int bin_to_dec(const char str[]);
-
-
 
 int main()
 {
@@ -30,9 +28,9 @@ int main()
 
 	const int SIZE = 256;
 	char str[SIZE] = {};
-	//char str[SIZE] = "    Хорошо      ЖИвет    НА     свете Винни      Пух";
-	//char str[SIZE] = "Аргентина манит негра";;
-	std::cout << "Enter your text (введите ваш текст): ";
+	//char str[SIZE] = "    РҐРѕСЂРѕС€Рѕ      Р–РРІРµС‚    РќРђ     СЃРІРµС‚Рµ Р’РёРЅРЅРё      РџСѓС…";
+	//char str[SIZE] = "РђСЂРіРµРЅС‚РёРЅР° РјР°РЅРёС‚ РЅРµРіСЂР°";;
+	std::cout << "Enter your text (РІРІРµРґРёС‚Рµ РІР°С€ С‚РµРєСЃС‚): ";
 	SetConsoleCP(1251); //2
 	std::cin.getline(str, SIZE);
 	SetConsoleCP(866);  //3
@@ -76,8 +74,8 @@ char* to_upper(char str[])
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			/*if (str[i] >= 'a' && str[i] >= 'z')str[i] -= 32;
-			if (str[i] >= 'а' && str[i] >= 'я')str[i] -= 32;
-			if (str[i] == 'ё')str[i] -= 16;*/
+			if (str[i] >= 'Р°' && str[i] >= 'СЏ')str[i] -= 32;
+			if (str[i] == 'С‘')str[i] -= 16;*/
 		}
 		str[i] = toupper(str[i]);
 	}
@@ -90,8 +88,8 @@ char* to_lower(char str[])
 		if (str[i] >= 'a' && str[i] <= 'z')
 		{
 			/*if (str[i] >= 'a' && str[i] >= 'z')str[i] += 32;
-			if (str[i] >= 'а' && str[i] >= 'я')str[i] += 32;
-			if (str[i] == 'ё')str[i] += 16;*/
+			if (str[i] >= 'Р°' && str[i] >= 'СЏ')str[i] += 32;
+			if (str[i] == 'С‘')str[i] += 16;*/
 		}
 		str[i] = tolower(str[i]);
 
